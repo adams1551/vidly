@@ -95,6 +95,8 @@ class Movies extends Component {
                         <td>{movie.dailyRentalRate}</td>
                         <td><Like onClick={() => this.handleLike(movie)} Like={movie.liked} /></td>
                         <td><button onClick={() =>this.handleDelete(movie)} className="btn btn-danger btn-sm">Delete</button></td>
+                        <td><button onClick={() =>this.handleDelete(movie)} style={{fontSize: "25", color: "white", textDecoration: "none", color: "white", backgroundColor: "white"}} className="btn btn-primary btn-sm"><Link to={`/Movies/${movie._id}`}>Edittt</Link></button></td>
+                        
                         </tr>)}
                     
                 </tbody>
